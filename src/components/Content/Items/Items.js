@@ -7,15 +7,15 @@ const Items = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const response = requests.fetchItems();
-    console.log(response);
-    setItems(response);
+    requests.fetchItems().then((response) => {
+      setItems(response);
+    });
   }, []);
 
   return (
     <div className={classes.items}>
       {items.map((item) => {
-        return <Item item={item}>item</Item>;
+        return <Item item={item}></Item>;
       })}
     </div>
   );
