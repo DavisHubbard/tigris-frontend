@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0 0.5rem;
+}
+.navigation a:hover {
+  opacity: 87%;
+}

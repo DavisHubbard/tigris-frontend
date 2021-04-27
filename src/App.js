@@ -1,12 +1,13 @@
-import React from "react";
-
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Content from "./components/Content/Content";
 
 function App() {
   return (
-    <React.Fragment>
+    <Router>
       <Header />
-    </React.Fragment>
+      <Content />
+    </Router>
   );
 }
 
